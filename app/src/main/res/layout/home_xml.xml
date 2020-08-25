@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:id="@+id/tv_long_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ff1e90ff"
+        android:textColor="#ffffffff"
+        android:text="  자기지킴이 출석체크시스템"
+        android:gravity="center|left"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:drawableRight="@drawable/ic_baseline_museum_24"
+        android:paddingRight="20dp"
+        android:drawablePadding="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <Button
+        android:id="@+id/btn_selfdaignosis2"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:background="#ff00bfff"
+        android:text="자기진단"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/ic_baseline_how_to_reg_24"
+        android:paddingTop="40dp"
+        android:drawablePadding="-20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <Button
+        android:id="@+id/btn_attendancecheck2"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:background="#ff00bfff"
+        android:text="출석관리"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/ic_baseline_playlist_add_check_24"
+        android:paddingTop="40dp"
+        android:drawablePadding="-20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <Button
+        android:id="@+id/btn_emergenctycall2"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:background="#ff00bfff"
+        android:text="긴급연락"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/ic_baseline_phone_24"
+        android:paddingTop="40dp"
+        android:drawablePadding="-20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.471" />
+
+    <Button
+        android:id="@+id/btn_realtimeinformation"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:background="#ff00bfff"
+        android:text="실시간 확진자 정보"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:drawableTop="@drawable/ic_baseline_insert_chart_outlined_24"
+        android:paddingTop="40dp"
+        android:drawablePadding="-20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.471" />
+
+    <Button
+        android:id="@+id/btn_privacy"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:background="#ff008000"
+        android:text="개인 정보 관리"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="288dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974"
+        app:srcCompat="@drawable/kpu_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
