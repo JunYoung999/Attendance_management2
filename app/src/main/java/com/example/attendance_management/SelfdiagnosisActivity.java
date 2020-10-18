@@ -78,7 +78,7 @@ public class SelfdiagnosisActivity extends AppCompatActivity {
             Button noButton = currentView.findViewById(R.id.no_button);
             Button yesButton = currentView.findViewById(R.id.yes_button);
             noButton.setOnClickListener(ListenerFactory.clickListenerFactory(this, i, 2, Color.GREEN));
-            yesButton.setOnClickListener(ListenerFactory.clickListenerFactory(this, i, 1, Color.GREEN));
+            yesButton.setOnClickListener(ListenerFactory.clickListenerFactory(this, i, 1, Color.RED));
         }
     }
 
