@@ -32,9 +32,8 @@ import javax.xml.transform.Result;
 public class SelfdiagnosisActivity extends AppCompatActivity {
     private ArrayList<Pair<String, String>> symptomsList;
 
-    Button coughYes, coughNo, throughYes, throughNo, headYes, headNo, highYes, highNo, noseYes, noseNo;
     private ArrayList<Integer> flags;
-    int coughN = 0, throughN = 0, headN = 0, highN = 0, noseN=0, call_number;
+    int call_number;
     private TextView tv_name;
     static final int REQUEST_IMAGE_CAPTURE = 1;
 
