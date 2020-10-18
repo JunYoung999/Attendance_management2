@@ -1,7 +1,10 @@
 package com.example.attendance_management;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -17,6 +20,7 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
@@ -25,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText et_id, et_pass;
     private Button btn_login, btn_register;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_xml);
@@ -88,5 +93,17 @@ public class LoginActivity extends AppCompatActivity {
                 queue.add( loginRequest );
             }
         });
+        getPermissions();
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    private void getPermissions() {
+        String[] permissions = new String[]{Manifest.permission.INTERNET, Manifest.permission.CALL_PHONE, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
+        for(String s : permissions) {
+            if (checkSelfPermission(s)
+                    != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{s}, 1);
+            }
+        }
     }
 }

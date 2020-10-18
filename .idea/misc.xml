@@ -6,4 +6,14 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/recfun" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ScalaSbtSettings">
+    <option name="customVMPath" />
+  </component>
 </project>
