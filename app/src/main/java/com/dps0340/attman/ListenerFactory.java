@@ -1,8 +1,7 @@
-package com.example.attendance_management;
+package com.dps0340.attman;
 
 
 import android.graphics.drawable.ColorDrawable;
-import android.view.MotionEvent;
 import android.view.View;
 
 public abstract class ListenerFactory {

@@ -1,4 +1,4 @@
-package com.example.attendance_management;
+package com.dps0340.attman;
 
 import android.os.Bundle;
 

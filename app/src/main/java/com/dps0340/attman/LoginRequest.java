@@ -1,4 +1,4 @@
-package com.example.attendance_management;
+package com.dps0340.attman;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Response;
@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class LoginRequest extends StringRequest {
     final static private String URL = "http://an950120.dothome.co.kr/Login.php";
-    private Map<String, String> map;
+    private final Map<String, String> map;
 
     public LoginRequest(String userID, String userPassword, Response.Listener<String> listener) {
         super(Method.POST, URL, listener, null);

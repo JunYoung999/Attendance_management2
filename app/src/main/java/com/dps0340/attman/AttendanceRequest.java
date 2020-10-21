@@ -1,4 +1,4 @@
-package com.example.attendance_management;
+package com.dps0340.attman;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Response;
@@ -11,7 +11,7 @@ public class AttendanceRequest extends StringRequest {
 
     //서버 URL 설정(php 파일 연동)
     final static private String URL = "http://an950120.dothome.co.kr/Attendance2.php";
-    private Map<String,String> map;
+    private final Map<String,String> map;
     //private Map<String, String>parameters;
 
     public AttendanceRequest(String attendanceInformation,String time, Response .Listener<String>listener){

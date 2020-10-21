@@ -1,6 +1,5 @@
-package com.example.attendance_management;
+package com.dps0340.attman;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
