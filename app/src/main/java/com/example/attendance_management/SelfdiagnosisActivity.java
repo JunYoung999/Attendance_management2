@@ -96,6 +96,8 @@ public class SelfdiagnosisActivity extends AppCompatActivity {
     private void dispatchTakePictureIntent(Intent callback) {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         try {
+            // asynchronous, non-blocking 상태
+            // 수정 TODO
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
             startActivity(callback);
         } catch (ActivityNotFoundException e) {
